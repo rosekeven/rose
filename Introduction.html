@@ -1,0 +1,809 @@
+<html >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+</head>
+<body>
+<style>
+    html,body,div,p{margin:0;padding:0}
+    body{font-size:14px;font-family:"microsoft yahei";background-color:#ffffff}
+    table{border-collapse:collapse;border-spacing:0;table-layout:fixed}
+    th,td{font-size:14px;padding:0}
+    a{text-decoration:none}
+    img{border:0 none}
+    .blue{text-decoration:none;color:#3c3d5d}
+    .chead{width:1002px}
+    .chead .logo{width:698px;height:90px}
+    .chead .txt{width:152px;height:90px}
+    .column{width:1002px;line-height:28px;border:1px solid #dedede}
+    .column .hbox{width:185px;height:154px}
+    .column .head{display:block;background-color:#fafafa}
+    .column .box{width:100%;background-color:#ffffff;border-top:2px solid #f2f3f5}
+    .column .box1{width:100%;word-wrap:break-word;color:#ffffff;background-color:#3f4160}
+    .column .box2{width:100%;background-color:#f8f9fa}
+    .column .tba{width:940px;padding:0 30px 15px}
+    .column .tbb{width:940px;padding:0 30px}
+    .column .tb1{width:900px;line-height:28px;color:#333333;word-break:break-all;padding:0 20px}
+    .column .tb2{width:430px;padding:0 20px}
+    .column .tb3{width:900px;padding:15px 20px 15px 0}
+    .column .gray,.column .gray2{color:#999999;word-break:break-all}
+    .column .gray2{color:#666666}
+    .column .plate1,.column .plate2{width:430px;height:54px;font-size:16px;font-weight:bold;color:#818ba3}
+    .column .plate1{width:900px;padding:0 50px}
+    .column .plate1 .f16{font-size:14px;font-weight:normal;color:#333333}
+    .column .plate1 .f12{font-size:12px;font-weight:normal;color:#999999}
+    .column .keys,.column .keys2{width:85px;line-height:28px;color:#666666}
+    .column .keys2{width:110px}
+    .column .txt1,.column .txt2,.column .txt3{width:815px;line-height:28px;color:#333333;word-break:break-all}
+    .column .txt2{width:345px}
+    .column .txt3{width:auto;max-width:815px;font-size:14px;font-weight:bold}
+    .column .txt4{width:305px;color:#ffffff;word-break:break-all}
+    .column .infr{width:767px;color:#ffffff;table-layout:auto}
+    .column .vam,.column .grcha{vertical-align:middle;margin-left:5px}
+    .column .box1 .vam{margin-right:5px;margin-left:0}
+    .column .name{font-size:24px;padding-bottom:18px}
+    .column .icard{color:#a1a3ae;padding-bottom:18px}
+    .column .con{border-top:1px dotted #ddd}
+    .column .pr20{width:225px;padding-right:20px}
+    .column .time{width:120px;line-height:28px;color:#666666;padding-left:20px}
+    .column .rtbox{width:765px;line-height:28px;color:#333333;padding:0 20px 0 15px;word-break:break-all}
+    .column .hai,.column .guan{line-height:18px;font-size:12px;color:#ffffff;vertical-align:text-top;margin-left:5px;padding:1px 3px;background-color:#3cbe7f;border-radius:2px}
+    .column .guan{background-color:#ff9f20}
+    .column .tag{display:inline-block;word-break:break-all;}
+    .column .all{color:#666;padding:10px 20px;background-color:#fafafa}
+    .column .tit{width:900px;height:40px;color:#666666;padding:0 20px;background-color:#f5f5f5}
+    .column .p15{padding:15px 0}
+    .column .p5{display:inline-block;color:#666666;padding:0 5px;}
+    .column .cell .skill{width:165px;text-align:right;padding-right:15px}
+    .column .cell .skbg,.column .cell .skco{display:inline-block;width:245px;height:18px;line-height:18px;font-size:12px;color:#ffffff;vertical-align:top;margin-top:6px;background-color:#dddddd;border-radius:20px;}
+    .column .cell .skco{width:235px;font-style:normal;margin-top:0;padding-left:10px;background-color:#ff9f20;z-index:3}
+    .column .sl .skco{width:173px}
+    .column .lh .skco{width:112px}
+    .column .yb .skco{width:51px}
+    .column .fbox strong{font-size:14px;font-weight:bold}
+    .column .cha{font-size:12px;font-weight:normal;color:#00457d;margin-left:5px}
+    .column .cha1{font-size:14px}
+    .column .cha:hover{color:#ff6000}
+    .column .email{width:330px}
+	.column .bbf{border-bottom:1px dotted #ddd;}
+	
+    .eng td,.eng .txt3,.eng .fbox strong{font-size:13px;font-family:'Arial'}
+    .eng .txt1,.eng .rtbox,.eng .phd{width:775px;font-size:13px;font-family:'Arial';line-height:28px}
+    .eng .txt2{width:305px}
+    .eng .txt4{width:245px}
+    .eng .cell .txt3{width:120px}
+    .eng .time,.eng .keys{width:110px;font-size:13px;text-align:right}
+    .eng .cell .skill{width:130px}
+    .eng .phd{padding-left:145px}
+    .eng .keys{padding-right:15px}
+    .eng .pr20{width:205px}
+    .eng .pr20 .keys{width:100px}
+    .eng .email{width:270px}
+    /* adjust */
+    .column .tba{ width: 900px; padding: 0 50px 15px; }
+    .column .tb1{ padding-left:0; padding-right:0; }
+    .column .tb2{ padding-left:0; width:450px; }
+    .column .pd_20{ padding-left:20px; padding-right:20px; }
+    .h_16{ height:16px; }
+    .schHead img{ display:block; }
+    .column .schGood{ line-height: 18px; font-size: 12px; color: #F87203; vertical-align: text-top; margin-left:4px; padding: 1px 3px; background-color: #FFEDE5; border-radius: 2px; }
+    .column .p_12{ padding-left:12px; }
+    .column .time{ text-align:right; }
+    .column .schTime{ width:115px; }
+</style>
+<table cellpadding="0" cellspacing="0" align="center" bgcolor="#fff" class="column">
+    <tbody >
+        <tr>
+            <td valign="top">
+                <!--������Ϣ-->
+                <table cellspacing="0" cellpadding="0" border="0" class="box1">
+                    <tbody>
+                        <tr>
+                            <td class="hbox" align="middle">
+                                <img src="https://i.51job.com/resume/ajax/image.php?type=avatar&userid=67567574&key=86996f6d74040a640566000e6b703f72&1658895401" width="85" height="104" class="head" alt="ͷ��">
+                            </td>
+                            <td>
+                                <table cellspacing="0" cellpadding="0" border="0" class="infr">
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="2" class="name">�����                                                                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" colspan="3">
+                                                <p>
+                                                <img class="vam" src="https://img01.51jobcdn.com/im/2016/resume/y4.png" width="20" height="20" />
+                                                ��                                                <span class="p5">|</span>
+                                                34 �� (1987/08)                                                <span class="p5">|</span>
+                                                13�깤������                                                <span class="p5">|</span>
+                                                                                                ������Ա                                                <span class="p5">|</span>
+                                                                                                �־�ס����                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                                                                            <td valign="top">
+                                                    <img class="vam" src="https://img01.51jobcdn.com/im/2016/resume/y2.png" width="20" height="20" />150****4500                                                </td>
+                                                                                                                                        <td valign="top">
+                                                    <table cellspacing="0" cellpadding="0" border="0" class="email">
+                                                    <tbody>
+                                                        <tr>
+                                                        <td valign="top" width="25">
+                                                            <img class="vam" src="https://img01.51jobcdn.com/im/2016/resume/y3.png" width="20" height="20" />
+                                                        </td>
+                                                        <td valign="top" class="txt4">63258****@qq.com</td>
+                                                        </tr>
+                                                    </tbody>
+                                                    </table>
+                                                </td>
+                                                                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--��������-->
+                                    <table cellspacing="0" cellpadding="0" border="0" class="box">
+                        <tbody>
+                        <tr>
+                            <td class="plate1">
+                                ��������                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tba">
+                                <table cellspacing="0" cellpadding="0" border="0">
+                                    <tbody>
+                                    <tr>
+                                        <td class="tb1">
+                                            ���Կ�����͡��������渺�𡣻�Ʊ10�꣬�ԽӺ�˾�����������ͻ��������¶���������                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                                <!--��ְ����-->
+                                <table cellspacing="0" cellpadding="0" border="0" class="box">
+                    <tbody>
+                    <tr>
+                        <td class="plate1">��ְ����</td>
+                    </tr>
+                                        <tr>
+                        <td class="tba">
+                            <table cellspacing="0" cellpadding="0" border="0">
+                                <tbody>
+                                                                                                    <tr>
+                                        <td class="p15 bbf">
+                                            <table cellspacing="0" cellpadding="0" border="0">
+                                                <tbody>
+                                                                                                    <tr>
+                                                                                                                    <td class="tb2" valign="top">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <td valign="top" class="keys">����ְ�ܣ�</td>
+                                                                        <td valign="top" class="txt2">
+                                                                                                                                                                                                                                                <span class="tag">��������רԱ</span>
+                                                                                                                                                        </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                                                                                                                                            <td class="tb2" valign="top">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <td valign="top" class="keys">�������У�</td>
+                                                                        <td valign="top" class="txt2">
+                                                                                                                                                            <span class="tag">����</span>
+                                                                                                                                                    </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                                                                                                                                    </tr>
+                                                                                                                                                    <tr>
+                                                                                                                    <td class="tb2" valign="top">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <td valign="top" class="keys">������н��</td>
+                                                                        <td valign="top" class="txt2">
+                                                                            6ǧ-8ǧ/��                                                                        </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                                                                                                                                            <td class="tb2" valign="top">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <td valign="top" class="keys">������ҵ��</td>
+                                                                        <td valign="top" class="txt2">
+                                                                                                                                                            <span class="tag">
+                                                                    ����/����&nbsp;&nbsp;                                                                </span>
+                                                                                                                                                            <span class="tag">
+                                                                    ������/��������&nbsp;&nbsp;                                                                </span>
+                                                                                                                                                            <span class="tag">
+                                                                    ����/�г��ƹ�/��չ                                                                </span>
+                                                                                                                                                    </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                                                                                                                                    </tr>
+                                                                                                                                                    <tr>
+                                                                                                                    <td class="tb2" valign="top">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <td valign="top" class="keys">�������ͣ�</td>
+                                                                        <td valign="top" class="txt2">ȫְ</td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                                                                                                                                    </tr>
+                                                                                                                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                                                    <tr>
+                                        <td class="p15 bbf">
+                                            <table cellspacing="0" cellpadding="0" border="0">
+                                                <tbody>
+                                                                                                    <tr>
+                                                                                                                    <td class="tb2" valign="top">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <td valign="top" class="keys">����ְ�ܣ�</td>
+                                                                        <td valign="top" class="txt2">
+                                                                                                                                                                                                                                                <span class="tag">���̾���/��������</span>
+                                                                                                                                                        </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                                                                                                                                            <td class="tb2" valign="top">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <td valign="top" class="keys">�������У�</td>
+                                                                        <td valign="top" class="txt2">
+                                                                                                                                                            <span class="tag">����</span>
+                                                                                                                                                    </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                                                                                                                                    </tr>
+                                                                                                                                                    <tr>
+                                                                                                                    <td class="tb2" valign="top">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <td valign="top" class="keys">������н��</td>
+                                                                        <td valign="top" class="txt2">
+                                                                            1��-1.5��/��                                                                        </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                                                                                                                                            <td class="tb2" valign="top">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <td valign="top" class="keys">������ҵ��</td>
+                                                                        <td valign="top" class="txt2">
+                                                                                                                                                            <span class="tag">
+                                                                    ����/����&nbsp;&nbsp;                                                                </span>
+                                                                                                                                                            <span class="tag">
+                                                                    ������/��������&nbsp;&nbsp;                                                                </span>
+                                                                                                                                                            <span class="tag">
+                                                                    ����/�г��ƹ�/��չ                                                                </span>
+                                                                                                                                                    </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                                                                                                                                    </tr>
+                                                                                                                                                    <tr>
+                                                                                                                    <td class="tb2" valign="top">
+                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <td valign="top" class="keys">�������ͣ�</td>
+                                                                        <td valign="top" class="txt2">ȫְ</td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                                                                                                                                    </tr>
+                                                                                                                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                                                            <td class="tba">
+                        <table cellspacing="0" cellpadding="0" border="0">
+                            <tbody>
+                            <tr>
+                                <td class="tb2" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="keys">��ְ״̬��</td>
+                                            <td valign="top" class="txt2">Ŀǰ�����ҹ���</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td class="tb2" valign="top">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                        <tbody>
+                                        <tr>
+                                            <td valign="top" class="keys">����ʱ�䣺</td>
+                                            <td valign="top" class="txt2">1������</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                                        </tbody>
+                </table>
+                                <!--��������-->
+                                    <table cellspacing="0" cellpadding="0" border="0" class="box">
+                        <tbody>
+                            <tr>
+                                <td class="plate1">��������</td>
+                            </tr>
+                            <tr>
+                                <td class="tbb">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                                                                                                            <tr>
+                                                                                            <td class="p15 pd_20">
+                                                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="phd tb1">
+                                                                    <strong>�������ɺ���Ʊ�����޹�˾</strong><span class="gray">&nbsp;��1��11���£�</span>
+                                                                </td>
+                                                                <td valign="top" class="time">2016/1-2017/12</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td valign="top" class="tb1" colspan="2">
+                                                                    <span>���̾���/��������</span>
+                                                                                                                                    </td>
+                                                            </tr>
+                                                             <tr>
+                                                                <td class="h_16" colspan="2"></td>
+                                                            </tr>
+                                                                                                                            <tr>
+                                                                    <td class="phd tb1 gray2" colspan="2">������/��������<span class="p5">|</span>����50��<span class="p5">|</span>��Ӫ��˾</td>
+                                                                </tr>
+                                                                                                                                                                                                                                                        <tr>
+                                                                    <td class="tb1" colspan="2">
+                                                                        <table cellspacing="0" cellpadding="0" border="0">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td valign="top" class="keys">����������</td>
+                                                                                    <td valign="top" class="txt1">�����OTA��ͬ�̡�ȥ�Ķ���Я�̡�jlx.����ƽ̨�ĶԽ���Ӫ������˾�������ߵ�Ӫ���������Լ��з��µ����ߡ���Ӫ�������������������ĶԽӱ��ϡ�<br>���ţ������ŶӲ�����ְԭ���ͥ��ʣ�</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                    </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                                                                                                            <tr>
+                                                                                            <td class="p15 con pd_20">
+                                                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="phd tb1">
+                                                                    <strong>���������������޹�˾</strong><span class="gray">&nbsp;��1��11���£�</span>
+                                                                </td>
+                                                                <td valign="top" class="time">2014/1-2015/12</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td valign="top" class="tb1" colspan="2">
+                                                                    <span>���̾���/��������</span>
+                                                                                                                                    </td>
+                                                            </tr>
+                                                             <tr>
+                                                                <td class="h_16" colspan="2"></td>
+                                                            </tr>
+                                                                                                                            <tr>
+                                                                    <td class="phd tb1 gray2" colspan="2">������/��������<span class="p5">|</span>����50��<span class="p5">|</span>��Ӫ��˾</td>
+                                                                </tr>
+                                                                                                                                                                                                                                                        <tr>
+                                                                    <td class="tb1" colspan="2">
+                                                                        <table cellspacing="0" cellpadding="0" border="0">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td valign="top" class="keys">����������</td>
+                                                                                    <td valign="top" class="txt1">�����OTA��ͬ�̡�ȥ�Ķ���Я�̡�jlx.����ƽ̨�ĶԽ���Ӫ������˾�������ߵ�Ӫ���������Լ��з��µ����ߡ���Ӫ�������������������ĶԽӱ��ϡ�<br>���ţ������ŶӲ� ����ְԭ���ͥ��ʣ�</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                    </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                                                                                                            <tr>
+                                                                                            <td class="p15 con pd_20">
+                                                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="phd tb1">
+                                                                    <strong>���ϻ��ĺ���Ʊ��������޹�˾</strong><span class="gray">&nbsp;��10���£�</span>
+                                                                </td>
+                                                                <td valign="top" class="time">2013/3-2014/1</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td valign="top" class="tb1" colspan="2">
+                                                                    <span>�����Ŷ�Ʊ����</span>
+                                                                    <span class="p5">|</span><span>Ʊ��</span>                                                                </td>
+                                                            </tr>
+                                                             <tr>
+                                                                <td class="h_16" colspan="2"></td>
+                                                            </tr>
+                                                                                                                            <tr>
+                                                                    <td class="phd tb1 gray2" colspan="2">�Ƶ�/����<span class="p5">|</span>150-500��<span class="p5">|</span>��Ӫ��˾</td>
+                                                                </tr>
+                                                                                                                                                                                                                                                        <tr>
+                                                                    <td class="tb1" colspan="2">
+                                                                        <table cellspacing="0" cellpadding="0" border="0">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td valign="top" class="keys">����������</td>
+                                                                                    <td valign="top" class="txt1">�����������λ��Kλ�������г���Ϣ���ø�����·���ߵĵ�������ʱ�ԽӺ��չ�˾���ߣ���Ϥ���������г��۸���Ϣ���������롢��Ʊ����������г�ѶϢ������ͻ�����<br>��Ϥ����B2A,B2B,B2G,B2Cƽ̨������<br>���ţ�Ʊ��</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                    </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                                                                                                            <tr>
+                                                                                            <td class="p15 con pd_20">
+                                                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="phd tb1">
+                                                                    <strong>����Я�̹������������޹�˾</strong><span class="gray">&nbsp;��1�꣩</span>
+                                                                </td>
+                                                                <td valign="top" class="time">2010/12-2011/12</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td valign="top" class="tb1" colspan="2">
+                                                                    <span>Ʊ��</span>
+                                                                    <span class="p5">|</span><span>������Ӫ</span>                                                                </td>
+                                                            </tr>
+                                                             <tr>
+                                                                <td class="h_16" colspan="2"></td>
+                                                            </tr>
+                                                                                                                            <tr>
+                                                                    <td class="phd tb1 gray2" colspan="2">�Ƶ�/����<span class="p5">|</span>500-1000��<span class="p5">|</span>����</td>
+                                                                </tr>
+                                                                                                                                                                                                                                                        <tr>
+                                                                    <td class="tb1" colspan="2">
+                                                                        <table cellspacing="0" cellpadding="0" border="0">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td valign="top" class="keys">����������</td>
+                                                                                    <td valign="top" class="txt1">����ÿ���̨������׼ȷ��ʱ��Ʊ���зֹ�������ÿ����Ը�λ�Ĺ���������Ҫ���棬��ϸ��׼ȷ���������Ĳ������ܡ�<br>���ţ�������Ӫ</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                    </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                                                                                                            <tr>
+                                                                                            <td class="p15 con pd_20">
+                                                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="phd tb1">
+                                                                    <strong>������ȥ����Ϣ���������������ι�˾</strong><span class="gray">&nbsp;��9���£�</span>
+                                                                </td>
+                                                                <td valign="top" class="time">2010/1-2010/10</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td valign="top" class="tb1" colspan="2">
+                                                                    <span>Ʊ��</span>
+                                                                    <span class="p5">|</span><span>������</span>                                                                </td>
+                                                            </tr>
+                                                             <tr>
+                                                                <td class="h_16" colspan="2"></td>
+                                                            </tr>
+                                                                                                                            <tr>
+                                                                    <td class="phd tb1 gray2" colspan="2">����/����<span class="p5">|</span>50-150��<span class="p5">|</span>��Ӫ��˾</td>
+                                                                </tr>
+                                                                                                                                                                                                                                                        <tr>
+                                                                    <td class="tb1" colspan="2">
+                                                                        <table cellspacing="0" cellpadding="0" border="0">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td valign="top" class="keys">����������</td>
+                                                                                    <td valign="top" class="txt1">�������ݣ����ڹ��ʻ�Ʊ��Ԥ�������ۣ�������������ϵĲ���ģʽ�������ձ���������������ÿ�����ߵ�������ͬ��֮��ľ��ۡ���ɵ��ն����ĳ�Ʊ������������������ϸ�ĺ˶ԡ��������������ۡ�ȥ�Ķ����Ա����Ӵ���
+<br>���˸������۴���ʲô����ְҵ��ֻ�кõ���̬����Ϊ��˾��������Ч�ʵĹ�����<br>���ţ�������</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                    </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                                                                                                            <tr>
+                                                                                            <td class="p15 con pd_20">
+                                                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="phd tb1">
+                                                                    <strong>��ɴ��ֳ�����</strong><span class="gray">&nbsp;��2���£�</span>
+                                                                </td>
+                                                                <td valign="top" class="time">2009/3-2009/5</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td valign="top" class="tb1" colspan="2">
+                                                                    <span>ѧ��ʵ��</span>
+                                                                                                                                            <span>(��ְ)</span>
+                                                                                                                                    </td>
+                                                            </tr>
+                                                             <tr>
+                                                                <td class="h_16" colspan="2"></td>
+                                                            </tr>
+                                                                                                                                                                                                                                                        <tr>
+                                                                    <td class="tb1" colspan="2">
+                                                                        <table cellspacing="0" cellpadding="0" border="0">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td valign="top" class="keys">����������</td>
+                                                                                    <td valign="top" class="txt1">�����������ֳ��������������ͻ�ֱ�ӵ���̨���Ÿ��ɴ��Ӱ����ѯ�������</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                    </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                                                                                                            <tr>
+                                                                                            <td class="p15 con pd_20">
+                                                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="phd tb1">
+                                                                    <strong>У԰����</strong><span class="gray">&nbsp;��2���£�</span>
+                                                                </td>
+                                                                <td valign="top" class="time">2008/6-2008/8</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td valign="top" class="tb1" colspan="2">
+                                                                    <span>ѧ��ʵ��</span>
+                                                                                                                                            <span>(��ְ)</span>
+                                                                                                                                    </td>
+                                                            </tr>
+                                                             <tr>
+                                                                <td class="h_16" colspan="2"></td>
+                                                            </tr>
+                                                                                                                                                                                                                                                        <tr>
+                                                                    <td class="tb1" colspan="2">
+                                                                        <table cellspacing="0" cellpadding="0" border="0">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td valign="top" class="keys">����������</td>
+                                                                                    <td valign="top" class="txt1">�й������ƶ�����ͨУ԰����!�������۵绰��</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                    </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                                                                                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                                <!-- ��Ŀ���� -->
+                                <!--��������-->
+                                    <table class="box">
+                        <tbody>
+                            <tr>
+                                <td class="plate1">��������</td>
+                            </tr>
+                            <tr>
+                                <td class="tba">
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                                                                                                                                                        <tr>
+                                                                                                    <td class="p15">
+                                                                                                    <table cellspacing="0" cellpadding="0" border="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                                                                                <td rowspan="2" class="schHead">
+                                                                    <img src="https://img01.51jobcdn.com/im/school/%25E5%25B9%25BF%25E5%25B7%259E%25E6%25B0%2591%25E8%2588%25AA%25E8%2581%258C%25E4%25B8%259A%25E6%258A%2580%25E6%259C%25AF%25E5%25AD%25A6%25E9%2599%25A2.jpg" alt="" width="52" height="52"> 
+                                                                </td>
+                                                                                                                                <td valign="top" class="rtbox p_12">
+                                                                    <strong>������ְҵ����ѧԺ</strong>
+                                                                                                                                                                                                                                                                            </td>
+                                                                <td valign="top" class="time schTime">2006/7-2009/6</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="rtbox p_12" colspan="2">
+                                                                    ��ר                                                                        <span class="p5">|</span>
+                                                                                                                                                ��ͨ����                                                                </td>
+                                                            </tr>
+                                                                                                                            <tr>
+                                                                    <td class="tb1" colspan="2">
+                                                                        <table cellspacing="0" cellpadding="0" border="0">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td valign="top" class="keys">רҵ������</td>
+                                                                                    <td valign="top" class="txt1">�����Ѿ���ʼʵϰ</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                                                                                    </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                                                                                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                                <!--��У���-->
+                                <!--�����س�-->
+                                    <table cellspacing="0" cellpadding="0" border="0" class="box">
+                        <tbody>
+                            <tr>
+                                <td class="plate1">
+                                �����س�                                    <span class="f12">������IT���ܡ�����������֤�顢�ɼ�����ѵ������</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tbb">
+                                    <!--����/����-->
+                                                                            <table cellspacing="0" cellpadding="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="tit">����/����</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="p15">
+                                                        <table cellspacing="0" cellpadding="0" border="0">
+                                                            <tbody>
+                                                                                                                                                                                                                                                                        <tr>
+                                                                                                                                                                                                                    <td class="tb2 cell sl" valign="top">
+                                                                                                                                                    <table cellspacing="0" cellpadding="0" border="0">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                <td class="skill">
+                                                                                    <strong class="txt3">��ͨ��</strong>
+                                                                                </td>
+                                                                                <td valign="top">
+                                                                                    <span class="skbg">
+                                                                                    <span class="skco">����</span>
+                                                                                    </span>
+                                                                                </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                                                                                                                                                                                                                                                                                                                                                                        <td class="tb2 cell sl" valign="top">
+                                                                                                                                                    <table cellspacing="0" cellpadding="0" border="0">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                <td class="skill">
+                                                                                    <strong class="txt3">Ӣ��</strong>
+                                                                                </td>
+                                                                                <td valign="top">
+                                                                                    <span class="skbg">
+                                                                                    <span class="skco">����</span>
+                                                                                    </span>
+                                                                                </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                                                                                        </tr>
+                                                                                                                                                                                                                                                                                                                                            <tr>
+                                                                                                                                                                                                                    <td class="tb2 cell sl" valign="top">
+                                                                                                                                                    <table cellspacing="0" cellpadding="0" border="0">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                <td class="skill">
+                                                                                    <strong class="txt3">Online Help</strong>
+                                                                                </td>
+                                                                                <td valign="top">
+                                                                                    <span class="skbg">
+                                                                                    <span class="skco">����</span>
+                                                                                    </span>
+                                                                                </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                                                                                                                                                                                                                </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                                                        <!--֤��-->
+                                                                            <table cellspacing="0" cellpadding="0" border="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="tit">֤��</td>
+                                                </tr>
+                                                                                                                                                    <tr>
+                                                                                                                <td class="p15 pd_20">
+                                                                                                                    <table cellspacing="0" cellpadding="0" border="0">
+                                                                <tbody>
+                                                                <tr>
+                                                                    <td valign="top" class="tb1">
+                                                                    <strong class="txt3">
+                                                                        ��ѧӢ���ļ�                                                                    </strong>
+                                                                                                                                        </td>
+                                                                    <td valign="top" class="time">2010/6</td>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                                                                                                                    <tr>
+                                                                                                                <td class="p15 pd_20 con">
+                                                                                                                    <table cellspacing="0" cellpadding="0" border="0">
+                                                                <tbody>
+                                                                <tr>
+                                                                    <td valign="top" class="tb1">
+                                                                    <strong class="txt3">
+                                                                        ���ڻ���Ա�弶֤��(�ɼ�������70��ʵ��72)                                                                    </strong>
+                                                                                                                                        </td>
+                                                                    <td valign="top" class="time">2009/5</td>
+                                                                </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                                                                                                            </tbody>
+                                        </table>
+                                                                        <!--��ѵ����-->
+                                                                    </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                                <!--������Ϣ-->
+                
+                <!--������Ʒ-->
+                                <!--������Ϣ-->
+                            </td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
